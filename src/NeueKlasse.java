@@ -31,7 +31,6 @@ public class NeueKlasse {
             default:
                 System.out.println("Sie haben den Monat falsch eingegeben");
         }
-
         if (monat.equals("jaenner")|| monat.equals("maerz") || monat.equals("mai") || monat.equals("juli") || monat.equals("august") || monat.equals("oktober") || monat.equals("dezember")){
             System.out.println(monat+" hat 31 Tage");
         } else if (monat.equals("februar")) {
@@ -43,12 +42,15 @@ public class NeueKlasse {
         return monatstage();
 
 
+
     }
 
     public static void main(String[] args) {
-        int tage = monatstage();
+
         monatstage();
-        break;
+
+
+
 
 
     }
