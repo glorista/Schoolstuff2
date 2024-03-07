@@ -1,3 +1,5 @@
+package Hüs;
+
 import java.util.Scanner;
 
 public class Hü3 {
