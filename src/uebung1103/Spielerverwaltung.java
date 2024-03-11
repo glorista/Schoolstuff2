@@ -14,6 +14,18 @@ public class Spielerverwaltung {
             }
 
         }
+
+    }
+    public Player bestPlayer() {
+        Player p = player[0];
+        for (int i = 0; i < player.length; i++) {
+            if (player[i].getPunkte() > p.getPunkte()){
+                p=player[i];
+                break;
+            }
+
+        }
+        return p;
     }
 }
 
