@@ -1,3 +1,5 @@
+package uebungarrays;
+
 import java.util.Arrays;
 
 public class array {

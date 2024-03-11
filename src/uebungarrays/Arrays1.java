@@ -1,6 +1,8 @@
+package uebungarrays;
+
 public class Arrays1 {
     public static void main(String[] args) {
-        int[] arr ={5,6,8,3,2,4}; //array füllen
+        int[] arr ={5,6,8,3,2,4}; //uebungarrays.array füllen
         printArray2(arr); //methode ausgeben
     }
 

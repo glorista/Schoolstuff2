@@ -1,3 +1,5 @@
+package uebungarrays;
+
 public class Arrays5 {
     public static void main(String[] args) {
         int [][] arr2d = new int[3][3];
