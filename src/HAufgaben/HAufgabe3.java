@@ -20,7 +20,7 @@ public class HAufgabe3 {
         System.out.println("Geb sie nun die gewünschte Wortlänge an: ");
         int k = scanner.nextInt();
 
-        if (k < 0) {
+        if (k <= 0) {
             System.out.println("Bitte gib eine Zahl an die Größer ist als 0");
         } else{
             String[] result =delete(words,k);

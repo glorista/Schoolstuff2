@@ -32,11 +32,12 @@ public class Unterkunft {
     }
 
     public double preisProBuchung(int betten){
-        if (betten> freieBetten()){
+        /* if (betten> freieBetten()){
             return -1;
         } else{
+
+         */
             return betten*preisProBett();
-        }
     }
 
     public int freieBetten(){
