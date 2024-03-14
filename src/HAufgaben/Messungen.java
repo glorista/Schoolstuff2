@@ -47,14 +47,21 @@ public class Messungen {
         }
     }
 
-    /*public void alleMessungenAmTag (String tag,double[] messwerte){
-        int tageszahl= tagesZahl(tag);
-        if(messungAmTag(tag)==0){
-            System.arraycopy(messwerte,0,messungen[tageszahl],0,messwerte.length);
+    public void alleMessungenAmTag (String tag,double[] messwerte){
+        int index= tagesZahl(tag);
+        boolean leer= true;
+        for(double m: messungen[index]){
+            if(m != 0){
+                leer=false;
+                break;
+            }
+        }
+        if(leer){
+            messungen[index]=messwerte;
         }
     }
 
-     */
+
 
 
 

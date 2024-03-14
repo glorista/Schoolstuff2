@@ -13,5 +13,6 @@ public class HAufgabe5 {
         unterkunft.bucheBetten(1);
 
 
+
     }
 }
