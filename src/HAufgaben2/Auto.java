@@ -6,12 +6,14 @@ public class Auto {
     private int jahr;
     private double geschwindigkeit;
 
+    //konstrukter
     public Auto(String marke, String modell, int jahr) {
         this.marke = marke;
         this.modell = modell;
         this.jahr = jahr;
     }
 
+    //alle Getter
     public String getMarke() {
         return marke;
     }
@@ -28,6 +30,7 @@ public class Auto {
         return geschwindigkeit;
     }
 
+    //alle setter
     public void setMarke(String marke) {
         this.marke = marke;
     }
@@ -44,14 +47,17 @@ public class Auto {
         this.geschwindigkeit = geschwindigkeit;
     }
 
+    //hier wird die Geschwindigkeit um so viel erhöht wie man bei speed eingibt
     public void gasGeben(double speed){
         geschwindigkeit=geschwindigkeit+speed;
     }
 
+    //hier wird die Geschwindigkeit um so viel verringert wie man bei speed eingibt
     public void bremsen(double speed){
         geschwindigkeit=geschwindigkeit-speed;
     }
 
+    //hier befindet sich die Logik somit in der Main nur mehr die Methode toString aufgerufen werden kann
     @Override
     public String toString() {
         return "Marke: "+getMarke()+", Modell: "+getModell()+", Jahr: "+getJahr()+", Geschwindigkeit; "+getGeschwindigkeit();
