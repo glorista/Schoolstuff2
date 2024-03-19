@@ -13,8 +13,8 @@ public class OpeningHours {
         this.openingVariations = openingVariations;
     }
 
-    public String getOpeningHoursToday(DayOfWeek dayOfWeek) { //DayOfWeek von Java ein enum
-        if (openingVariations.equals(OpeningVariations.MONTOFRI)) {
+    public String getOpeningHoursToday(DayOfWeek dayOfWeek) { //DayOfWeek von Java ein enum  dayOfWeek von uns eine variable als parameter
+        if (openingVariations.equals(OpeningVariations.MONTOFRI)) { //
             if (dayOfWeek.equals(DayOfWeek.SATURDAY) || dayOfWeek.equals(DayOfWeek.SUNDAY)) {
                 return " is closed today";
             } else {
