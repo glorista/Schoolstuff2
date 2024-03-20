@@ -57,7 +57,7 @@ public class Auto {
         geschwindigkeit=geschwindigkeit-speed;
     }
 
-    //hier befindet sich die Logik somit in der Main nur mehr die Methode toString aufgerufen werden kann
+    //hier befindet sich die Logik somit in der AllesMoegliche.Main nur mehr die Methode toString aufgerufen werden kann
     @Override
     public String toString() {
         return "Marke: "+getMarke()+", Modell: "+getModell()+", Jahr: "+getJahr()+", Geschwindigkeit; "+getGeschwindigkeit();
