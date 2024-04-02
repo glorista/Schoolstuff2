@@ -8,5 +8,7 @@ public class PlayerSchiffe {
 
     public char[][] fillMyBoard(){
 
+        return new char[0][];
     }
+
 }
