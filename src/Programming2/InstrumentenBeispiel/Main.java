@@ -10,6 +10,6 @@ public class Main {
         o.addInstrument(t);
         o.addInstrument(p);
         o.playAll();
-        g
+
     }
 }
