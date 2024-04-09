@@ -12,6 +12,10 @@ public class Feld {
         h.addHase(w);
         h.alleHasenHoppeln();
         o.fressen("Karotten mit Schokosauce");
+
+        System.out.println("------------");
+        h.addHase(new Hase("Bunni"));
+        h.hoppelSpecial();
     }
 }
 

@@ -11,12 +11,14 @@ public class Orchester {
             alle.add(i);
         }
     }
-    public void playAll(){
+    public int playAll(){
         int sum = 0;
         for(Instrument i:alle){
             i.play();
             sum = i.getLautstaerke()+sum;
         }
         System.out.println("Die Lautstärke alle Instrumente beträgt: "+ sum);
+        return sum;
     }
+
 }

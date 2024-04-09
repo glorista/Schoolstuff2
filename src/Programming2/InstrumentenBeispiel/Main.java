@@ -9,6 +9,9 @@ public class Main {
         o.addInstrument(g);
         o.addInstrument(t);
         o.addInstrument(p);
+
+        Piano piano = new Piano(40);
+        o.addInstrument(piano);
         o.playAll();
 
     }

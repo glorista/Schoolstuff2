@@ -1,11 +1,9 @@
 package Programming2.InstrumentenBeispiel;
 
-public class Instrument {
+public abstract class Instrument {
     protected int lautstaerke;
 
-    public int play(){
-        return lautstaerke;
-    }
+    public abstract int play();
 
     public Instrument(int lautstaerke) {
         this.lautstaerke = lautstaerke;

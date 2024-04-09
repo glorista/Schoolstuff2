@@ -1,14 +1,15 @@
 package Programming2.InstrumentenBeispiel;
 
-public class Gitarre extends Instrument {
+public class Piano extends Instrument{
 
-    public Gitarre(int lautstaerke) {
+    public Piano(int lautstaerke) {
         super(lautstaerke);
     }
 
     @Override
     public int play() {
-        System.out.println("Gittare wird gespielt");
+        System.out.println("Das Piano wird gespielt");
         return lautstaerke;
     }
+
 }

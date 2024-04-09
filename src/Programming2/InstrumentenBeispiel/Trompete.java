@@ -9,6 +9,6 @@ public class Trompete extends Instrument{
     @Override
     public int play() {
         System.out.println("Die Trompete wird geblasen.");
-        return super.play();
+        return lautstaerke;
     }
 }

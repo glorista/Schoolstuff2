@@ -9,6 +9,6 @@ public class Pauke extends Instrument{
     @Override
     public int play() {
         System.out.println("Die Pauke wird geschlagen");
-        return super.play();
+        return lautstaerke;
     }
 }
