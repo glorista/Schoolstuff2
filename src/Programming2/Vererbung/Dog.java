@@ -1,9 +1,9 @@
 package Programming2.Vererbung;
 
-public class Dog {
+public class Dog implements Comparable<Dog> {
 
     //können abgeleitete Klassen nicht zugreifen
-    private String name;
+    protected String name;
 
     //auf protected attribute können abgeleitete Klassen zugreifen
     protected int alter;
@@ -32,5 +32,28 @@ public class Dog {
 
     public void setAlter(int alter) {
         this.alter = alter;
+    }
+
+
+    //Hier möchten wir nach alter absteigend sortieren
+    //d.h. wir müssen in CompareTo das this Objekt mit dem o objekt vergleichen
+    //achtung im Beispiel in den Folien, wurde aufsteigend sortiert deshalb vertausche Rückgabewert
+    @Override
+    public int compareTo(Dog o) {
+        if(this.alter> o.alter){
+            return -1;
+        }
+        if(this.alter<o.alter){
+            return 42; //irgendeine positive Zahl
+        }
+        //wenn wir so weit kommen stimmt keins der oberen d.h. müssen gleich alt sein
+        return 0;
+    }
+
+    @Override
+    public String toString() {
+        return "Dog: " +
+                "name='" + name + '\'' +
+                ", alter=" + alter;
     }
 }
