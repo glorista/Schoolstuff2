@@ -27,4 +27,6 @@ public abstract class Getraenk implements Brennbar{
     public abstract boolean beinhaltetAlkohol();
     public abstract double mengeInMl();
 
+
+
 }

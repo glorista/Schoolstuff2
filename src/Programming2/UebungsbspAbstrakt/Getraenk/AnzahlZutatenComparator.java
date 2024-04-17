@@ -1,31 +1,20 @@
 package Programming2.UebungsbspAbstrakt.Getraenk;
 
 import java.util.ArrayList;
+import java.util.Comparator;
 
-public class AnzahlZutatenComparator extends Getraenk {
+public class AnzahlZutatenComparator implements Comparator<Getraenk> {
 
 
-    public AnzahlZutatenComparator(String name) {
-        super(name);
-    }
+    //aufsteigend nach anzahl der zutaten
 
     @Override
-    public int getAnzahlZutaten() {
+    public int compare(Getraenk o1, Getraenk o2) {
+        if(o1.getAnzahlZutaten()>o2.getAnzahlZutaten()){
+            return 1;
+        } else if (o1.getAnzahlZutaten()<o2.getAnzahlZutaten()) {
+            return -1;
+        }
         return 0;
-    }
-
-    @Override
-    public boolean beinhaltetAlkohol() {
-        return false;
-    }
-
-    @Override
-    public double mengeInMl() {
-        return 0;
-    }
-
-    @Override
-    public boolean brennt() {
-        return false;
     }
 }
