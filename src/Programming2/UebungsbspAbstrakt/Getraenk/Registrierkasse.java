@@ -1,10 +1,17 @@
 package Programming2.UebungsbspAbstrakt.Getraenk;
 
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.HashMap;
+import java.util.Map;
 
 public class Registrierkasse {
     private ArrayList<Getraenk> alleGetraenke = new ArrayList<>();
     private static int verkaufteGetraenke;
+
+    public Registrierkasse(){
+        verkaufteGetraenke=0;
+    }
 
 
     public static int getVerkaufteGetraenke() {
@@ -25,10 +32,21 @@ public class Registrierkasse {
     }
 
     public void printGetraenkSortiertNachAnzahlZutaten() {
-        System.out.println();
+        Collections.sort(alleGetraenke, new AnzahlZutatenComparator());
+        System.out.println(alleGetraenke);
     }
 
     public void printGetraenkeSortiertNachMl(){
-        System.out.println();
+        Collections.sort(alleGetraenke, new MiComparator());
+        System.out.println(alleGetraenke);
     }
+
+    //public HashMap<Integer,ArrayList<Getraenk>> getGetraenkeAufgeteiltNachZutaten(){
+        //Map<Integer,ArrayList<Getraenk>> alleAlleGetraenke = new HashMap<>();
+        //for (Getraenk g:alleGetraenke){
+
+       // }
+       // return;
+    //}
+
 }

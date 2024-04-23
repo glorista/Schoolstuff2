@@ -11,21 +11,32 @@ public class SimplesGetraenk extends Getraenk{
 
     @Override
     public boolean brennt() {
-        return false;
+            if(bestandteil.getAlkoholProzent()>30){
+                return true;
+            }
+            return false;
     }
 
     @Override
     public int getAnzahlZutaten() {
-        return 0;
+        return 1;
     }
 
     @Override
     public boolean beinhaltetAlkohol() {
+        if(bestandteil.getAlkoholProzent()>30){
+            return true;
+        }
         return false;
     }
 
     @Override
     public double mengeInMl() {
-        return 0;
+        return bestandteil.getMenge();
+    }
+
+    @Override
+    public String toString() {
+        return "SimplesGetraenk: " + "name=" + name + "\n Anzahl Zutaten" + getAnzahlZutaten()+", alkoholisch: "+beinhaltetAlkohol()+ ", brennbar: "+brennt();
     }
 }
