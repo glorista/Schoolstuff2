@@ -1,13 +1,5 @@
 package PR2Klausur1.src.test.java.at.campus02.iwi.devices;
 
-import org.junit.Before;
-import org.junit.Test;
-
-import java.util.HashMap;
-import java.util.List;
-
-import static org.junit.Assert.*;
-
 public class DeviceTest {
 
 //    private Tablet t1, t2;
