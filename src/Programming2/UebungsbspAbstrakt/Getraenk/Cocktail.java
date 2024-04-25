@@ -5,9 +5,8 @@ import java.util.ArrayList;
 public class Cocktail extends Getraenk {
     protected ArrayList<Fluessigkeit> bestandteile = new ArrayList<>();
 
-    public Cocktail(String name, ArrayList<Fluessigkeit> bestandteile) {
+    public Cocktail(String name) {
         super(name);
-        this.bestandteile = bestandteile;
     }
 
     @Override

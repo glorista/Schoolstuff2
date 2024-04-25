@@ -6,7 +6,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class Registrierkasse {
-    private ArrayList<Getraenk> alleGetraenke = new ArrayList<>();
+    protected ArrayList<Getraenk> alleGetraenke = new ArrayList<>();
     private static int verkaufteGetraenke;
 
     public Registrierkasse(){
@@ -41,12 +41,32 @@ public class Registrierkasse {
         System.out.println(alleGetraenke);
     }
 
-    //public HashMap<Integer,ArrayList<Getraenk>> getGetraenkeAufgeteiltNachZutaten(){
-        //Map<Integer,ArrayList<Getraenk>> alleAlleGetraenke = new HashMap<>();
-        //for (Getraenk g:alleGetraenke){
+    public HashMap<Integer,ArrayList<Getraenk>> getGetraenkeAufgeteiltNachZutaten(){
+        HashMap<Integer,ArrayList<Getraenk>> alleAlleGetraenke = new HashMap<>();
 
-       // }
-       // return;
-    //}
+        for (Getraenk g:alleGetraenke){
 
+            int anzahl=g.getAnzahlZutaten();
+
+            if(alleAlleGetraenke.containsKey(anzahl)){
+
+               alleAlleGetraenke.get(anzahl).add(g);
+
+            }else{
+                ArrayList<Getraenk> hansi = new ArrayList<>();
+                // getränk hinzufügen hinzufügen
+                //
+                hansi.add(g);
+                alleAlleGetraenke.put(anzahl,hansi);
+            }
+        }
+        return alleAlleGetraenke;
+    }
+
+    @Override
+    public String toString() {
+        return "Registrierkasse{" +
+                "alleGetraenke=" + alleGetraenke +
+                '}';
+    }
 }
