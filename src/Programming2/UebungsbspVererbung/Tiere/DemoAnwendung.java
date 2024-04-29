@@ -9,5 +9,12 @@ public class DemoAnwendung {
         d.makeNoise();
         d.walk();
 
+        Lion l = new Lion("grün",4);
+
+        Nature n = new Nature();
+        n.addAnimal(l);
+        n.addAnimal(quaxi);
+        System.out.println(n.countColor("grün"));
+
     }
 }

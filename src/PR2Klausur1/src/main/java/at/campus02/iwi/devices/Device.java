@@ -6,7 +6,7 @@ public abstract class Device {
     protected String name;
     protected Processor processor;
     protected int releaseYear;
-    protected int nrProduced;
+    protected int nrProduced =0;
 
     public Device(String name, Processor processor, int releaseYear, int nrProduced) {
         this.name = name;
