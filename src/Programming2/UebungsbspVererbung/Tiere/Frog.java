@@ -1,6 +1,6 @@
 package Programming2.UebungsbspVererbung.Tiere;
 
-public class Frog extends Animal{
+public class Frog extends Animal {
     public Frog(String color, int countEyes) {
         super(color, countEyes);
     }
