@@ -35,7 +35,7 @@ public class Tablet extends Device {
         if(arCamera==true){
             kosten=kosten+50;
         }
-        return kosten ;
+        return kosten *nrProduced ;
     }
 
     @Override

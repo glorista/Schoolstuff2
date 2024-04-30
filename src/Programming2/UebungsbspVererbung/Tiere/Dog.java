@@ -1,6 +1,6 @@
 package Programming2.UebungsbspVererbung.Tiere;
 
-public class Dog extends Animal{
+public class Dog extends Animal {
     protected String name;
 
 

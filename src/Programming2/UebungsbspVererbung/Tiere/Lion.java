@@ -1,6 +1,6 @@
 package Programming2.UebungsbspVererbung.Tiere;
 
-public class Lion extends Animal{
+public class Lion extends Animal {
     public Lion(String color, int countEyes) {
         super(color, countEyes);
     }
