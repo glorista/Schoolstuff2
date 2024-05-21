@@ -1,6 +1,5 @@
-package Programmieren3.uebung14;
+package Programmieren3.File.uebung14;
 
-import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.PrintStream;
 

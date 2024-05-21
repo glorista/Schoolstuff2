@@ -1,15 +1,15 @@
 package Programmieren3.uebung11_withExeptions;
 
-import Programmieren3.uebung11.Product;
+import Programmieren3.File.uebung11.Product;
 
 import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
 
 public class ProductManager {
-    private List<Programmieren3.uebung11.Product> products = new ArrayList<>();
+    private List<Programmieren3.File.uebung11.Product> products = new ArrayList<>();
 
-    public void add(Programmieren3.uebung11.Product p) {
+    public void add(Programmieren3.File.uebung11.Product p) {
         //if (!products.contains(p)) {
             products.add(p);
         //}

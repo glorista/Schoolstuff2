@@ -1,4 +1,4 @@
-package Programmieren3.uebung11;
+package Programmieren3.File.uebung11;
 
 public class Product {
     //Schreiben Sie eine Klasse Product zur Abbildung von

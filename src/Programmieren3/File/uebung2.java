@@ -1,4 +1,4 @@
-package Programmieren3;
+package Programmieren3.File;
 
 import java.io.File;
 import java.util.Arrays;
