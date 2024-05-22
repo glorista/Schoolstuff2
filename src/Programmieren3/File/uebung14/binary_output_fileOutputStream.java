@@ -4,6 +4,8 @@ import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
 
+//was in ne file reinschreiben
+
 public class binary_output_fileOutputStream {
 
 
