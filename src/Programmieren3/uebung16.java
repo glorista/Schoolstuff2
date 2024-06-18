@@ -2,7 +2,7 @@ package Programmieren3;
 
 import java.io.*;
 
-public class uebung16 {
+public class uebung16 { //uebung16
 
     //Schreiben Sie ein Programm, das ein String- Objekt „Hallo Welt“ in eine Datei „object.dat“ serialisiert
     // und anschließend aus dieser wieder ausliest und auf die Konsole schreibt.
